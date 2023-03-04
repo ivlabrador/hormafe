@@ -1,0 +1,300 @@
+/* Header  */
+.header{
+    position: absolute;
+    top: 50px;
+    height: 8rem;
+    width: 100%;
+    z-index: var(--z-fixed);
+    transition: var(--tran-0-5);
+    background-color: transparent;
+}
+/* NavBar */
+.nav{
+    position: relative;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white-color);
+    padding: 0;
+  }
+/* NavBar - logo derecha */
+.nav .contact-logo{
+    height: 100%;
+    padding: 1rem;
+    width: 15%;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+/* NavBar - contenido central */
+.nav .menu-content{
+    display: flex;
+    height: 100%;
+    padding: 1rem;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+.nav .menu-content ul{
+    column-gap: 3rem;
+}
+.nav-link{
+    color: var(--text-color);
+    font-weight: 600;
+    transition: var(--tran-0-5);
+}
+.nav-link:hover{
+    opacity: .7;
+}
+/* NavBar - contenido derecha */
+.nav .contact-content{
+    height: 100%;
+    padding: 1rem;
+    width: 15%;
+    align-items: center;
+    background-color: transparent;
+}
+.nav .contact-content button{
+    padding: 1.2rem 2.4rem;
+    font-weight: 600;
+}
+.nav .contact-content button:hover{
+    background: var(--primary-color-hover);
+}
+/* Seccion de Portada */
+.home{
+    height: 100vh;
+    width: 100%;
+    box-shadow: 0px 3px 7px var(--shadow-color);
+    /* background-color: red; */
+  }
+.home-img{
+    height: 100%;
+    width: 100%;
+}
+.home-content{
+    width: 100%;
+    height: 100%;
+}
+.text-home{
+    display: flex;
+    justify-content: left;
+    align-items: center;    
+}
+.text-home .deco-home{
+    width: 110px;
+    height: 10px;
+    background-color: var(--primary-color);
+}
+.text-home h4{
+    color: var(--white-color);
+    font-weight: 600;
+    margin-left: 20px;
+}
+.home-content .logo-home{
+    display: block;
+    position: absolute;
+    float: right;
+    right: 100px;
+    height: 140px;
+}
+ 
+/* Separador con titulo */
+.sep-title{
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 2rem;
+}
+.sep-title .title-container{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 1rem;
+    align-items: center;
+    grid-auto-flow: column;
+}
+.title-grid{
+    width: 100%;
+    height: 100%;
+}
+.title-grid .deco{
+    float: left;
+    height: 15px;
+    width: calc(25% + 10px);
+    background: var(--primary-color);
+    position: absolute;
+}
+.title-grid.title{
+    justify-content: center;
+}
+.title-grid h1{
+    font-weight: 600;
+    font-size: 60px;
+}
+
+/* seccion Sobre Nosotros */
+.about{
+    padding: 0 10rem;
+}
+.about-content{
+    display: inline-block;
+    padding: 0 20rem;
+}
+.about-content p{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    line-height: 2.3rem;
+    text-align: left;
+    letter-spacing: .2rem;
+    margin-bottom: 2rem;
+}
+
+/* Separador con informacion */
+.sep-info{
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem;
+    
+
+}
+.sep-info .info-container{
+    height: 150px;
+    width: 80%;
+    border-top: 1px solid var(--text-color-light);
+    border-bottom: 1px solid var(--text-color-light);
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 1rem;
+    align-items: center;
+    grid-auto-flow: column;
+    padding: 0 10rem;
+}
+.info-container .info-grid{
+    justify-content: center;
+}
+.info-grid i{
+    color: var(--primary-color);
+    font-size: 40px;
+}
+
+/* Separador con foto -- Productos y Servicios */
+
+.sep-img{
+    height: 300px;
+    box-shadow: 0px 3px 7px var(--shadow-color);
+}
+.sep-img .img-container{
+    width: 100%;
+    height: 100%;
+}
+.text-img-container{
+    display: block;
+    position: absolute;
+    float: right;
+    right: 100px;
+}
+.text-img-container h1{
+    font-size: 46px;
+    color: var(--primary-color);
+    font-weight: 800;
+}
+.text-img-container h2{
+    font-size: 46px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+
+/* Seccion Acodion */
+
+.section-accordion{
+    padding: 0 10rem;
+}
+.accordion-container{
+    display: inline-block;
+    padding: 5rem 20rem;
+    width: 100%;
+}
+.accordion {
+    background-color: var(--white-color);
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid var(--text-color-light);
+    outline: none;
+    transition: 0.4s;
+  }
+
+button.accordion:hover{
+    background-color: var(--secondary-color-hover);
+} 
+.accordion i{
+    font-size: 20px;
+    color: var(--primary-color);
+    float: right;
+    margin-left: 5px;
+    transition: var(--tran-0-5);
+  }
+.active, .accordion:hover {
+    background-color: var(--white-color);
+  }
+.accordion.active i.fa-arrow-right{
+    transform: rotate(90deg);
+}
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    background-color: var(--white-color);
+    overflow: hidden;    
+    transition: max-height 0.2s ease-out;
+  }
+.panel p{
+    padding: 20px;
+    min-height: 60px;
+    font-weight: 400;
+  }  
+
+/*  Separador Estas Interesados en nuestros servicios=?  */  
+.text-img-container-job{
+    position: absolute;
+    display: block;
+    float: left;
+    left: 100px;
+}
+.text-img-container-job h2{
+    font-size: 46px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.text-img-container-job h4{
+    font-weight: 400;
+    color: var(--white-color)
+}
+.contact-content-img{
+    position: absolute;
+    display: block;
+    float: right;
+    right: 100px;
+}
+.contact-content-img button{
+    padding: 1.2rem 2.4rem;
+    font-weight: 600;
+    width: 200px;
+    height: 50px;
+}
+.contact-content-img button:hover{
+    background: var(--primary-color-hover);
+}
+.form-wsp{
+    margin-top: 20px;    
+}
+.contact-content-img button a{
+    text-decoration: none;
+    color: var(--text-color);
+}

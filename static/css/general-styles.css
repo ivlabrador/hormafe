@@ -1,0 +1,140 @@
+/*
+Aqui montaremos los estilos generales
+Tipografias y Colores
+*/
+/* Red Hat Style -- Tipografia Principal Light 300 - 400 - 600semi -- 700bold -- 900 */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@500&family=Libre+Franklin:wght@400;500;600;700&family=Montserrat:wght@200;300;400;500&family=Oswald:wght@300;400;500;600&family=Permanent+Marker&family=Poppins:ital,wght@0,400;0,500;0,700;1,500&family=Red+Hat+Display:wght@300;400;600;700;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');html{
+    font-size: 62.5%; /* 1rem = 10px */
+    scroll-behavior: smooth;
+}
+:root{
+    /* Font Sizes & Family */
+    /* if we set html's font size 62.5% then 1rem = 10px */
+    
+    --body-font: 'Red Hat Display', sans-serif;
+    --big-font: 4rem;
+    --h1-font: 3.6rem;
+    --h2-font: 2.4rem;
+    --h3-font: 2rem;
+    --h4-font: 1.8rem;
+    --normal-font: 1.6rem;
+    --small-font: 1.4rem;
+    --smaller-font: 1.3rem;
+    
+    /* Font Weight ***/
+    --font-light: 300;
+    --font-regular: 400;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    
+    /* Color Variables */
+    --primary-color: #f2d118;
+    --primary-color-hover: #bfa412; 
+    --text-color: #000000;
+    --text-color-light: #c5c3bf;
+    --secondary-color-hover: #e9e9e9; 
+    --white-color: #f5f5f5;
+    --shadow-color: #9f9f9f;
+    
+    /* z-index */
+    --z-overlay: 10;
+    --z-fixed: 100;
+    
+    /* transition */
+    --tran-0-2: 0.2s;
+    --tran-0-3: 0.3s;
+    --tran-0-5: 0.5s;
+    }
+
+/*Font sizes For Small Screen 968px */
+@media screen and (max-width: 990px) {
+    :root {
+      --big-font: 3.5rem;
+      --h1-font: 2.4rem;
+      --h2-font: 2rem;
+      --h3-font: 1.8rem;
+      --h4-font: 1.6rem;
+      --normal-font: 1.5rem;
+      --small-font: 1.3rem;
+      --smaller-font: 1.2rem;
+    }
+    }
+/* Custom Scrollbar */
+::selection{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+  }
+  ::-webkit-scrollbar{
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track{
+    color: var(--white-color);
+  }
+  ::-webkit-scrollbar-thumb{
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    border-radius: 1rem;
+    background-color: var(--primary-color-hover)
+  }
+  .title{
+    font-family: var(--title-font);
+  }
+
+
+/* Estilos Generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+    overflow-x: hidden;
+    background-color: var(--white-color);
+  }
+body,
+button,
+input{
+    font-family: var(--body-font);
+    font-size: var(--normal-font);
+    font-weight: var(--font-regular);
+    color: var(--text-color);
+  }
+  
+input{
+    outline: none;
+  }
+ul{
+    list-style: none;
+  }
+a{
+    text-decoration: none;
+  }
+img{
+    width: 100%;
+    height: 100%;
+    /*object-fit: cover;*/
+  }  
+
+.section{
+    padding: 7rem 2rem;
+  }
+.container{
+    max-width: 1230px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3rem;
+  }
+.flex{
+    display: flex;
+    align-items: center;
+    column-gap: 0.6rem;
+  }
+.button{
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    transition: var(--tran-0-5);
+    cursor: pointer;
+  }  
